@@ -20,5 +20,31 @@ def student_name(lastname, firstname):
     student_name = lastname.capitalize() + " " + firstname.capitalize()
     return student_name
 
-print( student_name("leticia","lakica"))
+print(student_name("leticia","lakica"))
+
+
+# IF STATEMENTS
+
+Is_Trash = False
+
+
+if Is_Trash:
+    print("Trash has been identified, preparing pickup sequence")
+else:
+    print("No trash detected")
+
+
+name = input("Name please: ")
+age = int(input("Please enter your age to access this site: "))
+
+def age_veriication():
+    if age <=0:
+        print(f"Invalid age")
+    elif age < 18:
+        print("You are not of eligible age to access this site")
+    
+    else:
+        print(f"Welcome to the Dark web {name}")
+
+age_veriication()
 
