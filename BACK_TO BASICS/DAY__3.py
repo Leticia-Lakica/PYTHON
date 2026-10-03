@@ -48,4 +48,5 @@ if not option == "q":
 else:
     print("See you next time")
 
-# So i think for my project i will work on something related to movies
+# So i think for my project i will work on something related to movies. Not sure what exactly yet or wwhat
+# i will be solving
