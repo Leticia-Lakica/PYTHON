@@ -47,3 +47,5 @@ if not option == "q":
     print(f"{option} is loading please wait")
 else:
     print("See you next time")
+
+# So i think for my project i will work on something related to movies
