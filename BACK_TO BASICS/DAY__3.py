@@ -49,4 +49,4 @@ else:
     print("See you next time")
 
 # So i think for my project i will work on something related to movies. Not sure what exactly yet or wwhat
-# i will be solving
+# i will be solving but i know i will figure ut out eventually, i mean i always do right
