@@ -64,7 +64,7 @@ class Movie(Media):
         self.runtime = runtime
 
     def play(self):
-            print(f"Play {self.title}")
+        return f"Play {self.title}"
 
 
 
@@ -76,12 +76,12 @@ class Series(Media):
         self.episodes = episodes
 
     def play(self):
-                print("Select Season and episode")
+        return "Select Season and episode"
 
 S1 = Series("Supernatural", 2009, "Thriller", True, "14", "22")
 
-# S1.play()
-# print(S1.seasons)
+S1.play()
+print(S1.seasons)
 
 M1 = Movie("Lost", 2012, "1:54:00", "Adventure", True)
 M1.play()
