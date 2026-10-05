@@ -3,6 +3,7 @@
 
 # OBJECTED ORIENTED PROGRAMMIN
 # Object, a bundle of related characteristics and methods
+from abc import ABC, abstractmethod
 
 class Movie:
     def __init__(self,title,year,duration,genre, is_available):
@@ -33,18 +34,19 @@ M1.play()
 M1.pause()
 M1.search()
 
-# INHERITANCE
-# The ability of a class to inherite the traites of another
+# # INHERITANCE
+# # The ability of a class to inherite the traites of another
 
-class Media():
+class Media(ABC):
     def __init__(self,title,year,genre, is_available):
         self.title = title
         self.year = year
         self.genre = genre
         self.is_available = is_available
 
+    @abstractmethod
     def play(self):
-        print(f"You are watching {self.title}")
+        pass
 
 
     def pause(self):
@@ -61,6 +63,9 @@ class Movie(Media):
         super().__init__(title, year, genre, is_available)
         self.runtime = runtime
 
+    def play(self):
+            print(f"Play {self.title}")
+
 
 
 
@@ -70,7 +75,14 @@ class Series(Media):
         self.seasons = seasons
         self.episodes = episodes
 
+    def play(self):
+                print("Select Season and episode")
+
 S1 = Series("Supernatural", 2009, "Thriller", True, "14", "22")
 
-S1.play()
-print(S1.seasons)
+# S1.play()
+# print(S1.seasons)
+
+M1 = Movie("Lost", 2012, "1:54:00", "Adventure", True)
+M1.play()
+
